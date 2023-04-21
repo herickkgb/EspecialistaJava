@@ -9,10 +9,11 @@ public class Principal {
 	
 		Carro meuCarro = new Carro();
 		meuCarro.modelo = "HR-V";
-		meuCarro.anoFabicacao = 2021;
+		meuCarro.anoFabicacao = 2018;
 		meuCarro.cor = "preto";
 		meuCarro.fabricante = "Honda";
 		meuCarro.propietario = eu; 
+		meuCarro.precoCompra = 120.000;
 	
 		Pessoa voce = new Pessoa();
 		voce.nome = "Jão das couves";
@@ -25,6 +26,7 @@ public class Principal {
 		seuCarro.cor = "Branco";
 		seuCarro.fabricante = "BMW";
 		seuCarro.propietario = voce;
+		seuCarro.precoCompra = 96.000;
 		
 		
 		System.out.println("Meu Carro");
@@ -48,6 +50,8 @@ public class Principal {
 		System.out.println("Nome: "+ seuCarro.propietario.nome);
 		System.out.println("Cpf: "+ seuCarro.propietario.cpf);
 		System.out.println("Ano de nascimento: "+ seuCarro.propietario.anoNascimento);
+		
+		meuCarro.calcularValorRevenda();
 		
 		System.out.println();
 
